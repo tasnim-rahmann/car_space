@@ -13,11 +13,11 @@ const NavBar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow font-medium">
-                            <li><a>Home</a></li>
-                            <li><a>Aobut</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Blog</a></li>
-                            <li><a>Contact</a></li>
+                            <li><Link href={"/"}>Home</Link></li>
+                            <li><Link href={"/about"}>About</Link></li>
+                            <li><Link href={"/services"}>Services</Link></li>
+                            <li><Link href={"/blog"}>Blog</Link></li>
+                            <li><Link href={"/contact"}>Contact</Link></li>
                         </ul>
                     </div>
                     <Link href={"/"}>
@@ -26,11 +26,11 @@ const NavBar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-medium">
-                        <li><a>Home</a></li>
-                        <li><a>Aobut</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact</a></li>
+                        <li><Link href={"/"}>Home</Link></li>
+                        <li><Link href={"/about"}>About</Link></li>
+                        <li><Link href={"/services"}>Services</Link></li>
+                        <li><Link href={"/blog"}>Blog</Link></li>
+                        <li><Link href={"/contact"}>Contact</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
