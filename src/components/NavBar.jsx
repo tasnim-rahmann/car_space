@@ -21,7 +21,7 @@ const NavBar = () => {
                         </ul>
                     </div>
                     <Link href={"/"}>
-                        <Image src={"/assets/logo.svg"} width={60} height={60} />
+                        <Image src={"/assets/logo.svg"} width={60} height={60} alt="services image" />
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -33,8 +33,10 @@ const NavBar = () => {
                         <li><Link href={"/contact"}>Contact</Link></li>
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn text-orange-500 border-orange-500 rounded-sm">Appointment</a>
+                <div className="navbar-end space-x-2">
+                    <Link href={"/login"} className="btn btn-outline border-orange-500 rounded-sm">Login</Link>
+                    <Link href={"/signup"} className="btn btn-outline border-orange-500 rounded-sm">SignUp</Link>
+                    <Link href={"/"} className="btn btn-outline text-orange-500 border-orange-500 rounded-sm">Appointment</Link>
                 </div>
             </div>
         </div>
